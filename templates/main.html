@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Main</h2>
+        {% if name %}<p>Welcome, {{ name }}!</p>{% endif %}
+        <form action="/dbs" method="post">
+            <input type="submit" value="DBS Price Prediction">
+        </form>
+        <form action="/" method="post">
+            <input type="submit" value="Exit">
+        </form>
+    </div>
+</body>
+</html>
